@@ -15,15 +15,4 @@ class ArticlesController < ApplicationController
         def show
             render :json => Article.all
         end
-        
-        # def construct 
-        #     if !Article.exists?(name: params[:name])
-        #         article = Article.new
-        #         article.name = params[:name]
-        #         artcile.save
-        #         return article
-        #     end
-            
-        #     return Article.find(name: params[:name])
-        # end
 end
