@@ -8,10 +8,8 @@ class ArticlesController < ApplicationController
         end
 
         def find
-            # article = Article.find(id: params[:id])
-            # article.new
-            # render :json => artcile.to_json            
-            render "Hello"
+            article = Article.find(params[:id])
+            render :json => artcile.to_json            
         end
 
         def show
