@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
         def create 
             article = Article.new
-            article.name = "KONCEHE"# params[:name]
+            article.name = params[:name]
             article.save
 
             render :json => article.to_json
