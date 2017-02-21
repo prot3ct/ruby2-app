@@ -22,6 +22,6 @@ class ArticlesController < ApplicationController
                 return article
             end
             
-            return Article.find_by(name: params[:name])
+            return Article.find(name: params[:name])
         end
 end
