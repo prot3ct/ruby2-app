@@ -26,6 +26,7 @@ class ArticlesController < ApplicationController
                 article.created_at = current_time.inspect
                 article.updated_at = current_time.inspect
                 artcile.save
+                return article
             end
             
             return Article.find_by(name: params[:name])
