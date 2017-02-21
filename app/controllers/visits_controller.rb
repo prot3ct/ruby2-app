@@ -1,6 +1,6 @@
 class VisitsController < ApplicationController
 	def index
-		render "wERGASFGASDelcome"
+		render "welcome"
 	end
 
 	def create 
