@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 	root 'visits#index'
 	
 	post '/articles', to: 'articles#create'
-	get '/articles/:id', to: 'articles#get_by_id'
+	get '/articles/id', to: 'articles#find'
 	get '/articles', to: 'articles#show'
 
 	get '/visits',  to: 'visits#show'

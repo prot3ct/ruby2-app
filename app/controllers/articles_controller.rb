@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
             render :json => article.to_json
         end
 
-        def get_by_id
+        def find
             # article = Article.find(id: params[:id])
         #     article.new
         #     render :json => artcile.to_json            
