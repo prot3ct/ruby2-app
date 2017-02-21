@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
         def create 
             current_time = Time.new
 
-            article = construct
+            article = Article.new
             article.updated_at = current_time.inspect
             article.save
 
