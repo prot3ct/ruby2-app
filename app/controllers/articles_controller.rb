@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
         def create 
             article = Article.new
-            article.name = params[:name]
+            # article.name = params[:name]
 
             render :json => article.to_json
         end
@@ -15,14 +15,14 @@ class ArticlesController < ApplicationController
             render :json => Article.all
         end
         
-        def construct 
-            if !Article.exists?(name: params[:name])
-                article = Article.new
-                article.name = params[:name]
-                artcile.save
-                return article
-            end
+        # def construct 
+        #     if !Article.exists?(name: params[:name])
+        #         article = Article.new
+        #         article.name = params[:name]
+        #         artcile.save
+        #         return article
+        #     end
             
-            return Article.find(name: params[:name])
-        end
+        #     return Article.find(name: params[:name])
+        # end
 end
