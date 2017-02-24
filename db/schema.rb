@@ -40,5 +40,4 @@ ActiveRecord::Schema.define(version: 20170122154947) do
 
   add_foreign_key "comments", "articles"
   add_foreign_key "votes", "articles"
-
 end
