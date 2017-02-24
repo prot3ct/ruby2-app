@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
         def index
-            render "welcome"
+            render "test"
         end
         
         def create 
