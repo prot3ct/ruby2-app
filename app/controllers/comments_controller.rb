@@ -16,4 +16,11 @@ class CommentsController < ApplicationController
     def show
         render :json => Comment.all
     end
+
+    def show_comments
+        article = Article.find(params[:article_id])
+        comments = article.comments.order('comments.content ASC')
+    
+        render json: => comments
+    end
 end

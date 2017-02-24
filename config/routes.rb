@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root 'visits#index'
+	root 'articles#index'
 	
 	post '/articles', to: 'articles#create'
 	get '/articles/:id', to: 'articles#find'
@@ -8,8 +8,5 @@ Rails.application.routes.draw do
 	post '/comments', to: 'comments#create'
 	get '/comments/:id', to: 'comments#find'
 	get '/comments', to: 'comments#show'
-
-
-	get '/visits',  to: 'visits#show'
-	post '/visits', to: 'visits#create'
+	get '/comments/:article_id/comments', to: 'comments#show_comments'
 end
