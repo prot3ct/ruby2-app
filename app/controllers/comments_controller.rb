@@ -20,7 +20,8 @@ class CommentsController < ApplicationController
     def show_comments
         # article = Article.find(params[:article_id])
         # comments = article.comments.order('comments.content ASC')
-        comments =[]
-        render json: => comments
+        
+        # render json: => comments
+        render "test"
     end
 end
