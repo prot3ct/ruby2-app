@@ -22,6 +22,5 @@ class CommentsController < ApplicationController
         comments = article.comments.order('comments.content ASC')
         
         render json: => comments
-        render "test"
     end
 end
