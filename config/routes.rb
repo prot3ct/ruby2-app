@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 	post '/comments', to: 'comments#create'
 	get '/comments/:id', to: 'comments#find'
 	get '/comments', to: 'comments#show'
-	get '/comments/:article_id/comments', to: 'comments#show_comments'
+	get '/articles/:article_id/comments', to: 'comments#show_comments'
 end
